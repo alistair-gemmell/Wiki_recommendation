@@ -27,6 +27,6 @@ def return_model(method, topics=None, new=False):
 		topic_model.save('{0}.model'.format(method))
 	else:
 		# Load model from disk
-		topic_model = load('hdp.model')
+		topic_model = load('{0}.model'.format(method))
 
 	return topic_model
