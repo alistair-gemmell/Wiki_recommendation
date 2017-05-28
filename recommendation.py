@@ -7,7 +7,7 @@ import os.path
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 # Get the topic models for the article list we have on disk
-hdp = hdp_model.return_model(new=False)
+topic model = topic_model.return_model(method='lda', topics=400, new=False)
 
 # If previous preferences have been saved, load them in, otherwise initialise randomly
 if os.path.isfile('preferences'):
